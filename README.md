@@ -20,15 +20,3 @@ I've used credit Approval dataset to detect some potential fraudsters with the h
 
 
 
-
-#### 1 - Introduction
-#### 1 - Introduction
-
-#### 1 - Introduction
-#### 1 - Introduction
-
-
-
-
-
-
