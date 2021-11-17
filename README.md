@@ -27,8 +27,18 @@ Bidirectional LSTMs are an extension of traditional LSTMs that can improve model
 In problems where all timesteps of the input sequence are available, Bidirectional LSTMs train two instead of one LSTMs on the input sequence. The first on the input sequence as-is and the second on a reversed copy of the input sequence. This can provide additional context to the network and result in faster and even fuller learning on the problem.
 
 ---
+### 3 LSTM RNN for text generation with Keras
 
-#### 3 - Predicting Google Stock Price with RNN model
+	- here we will split the book text up into subsequences with a fixed length of 100 characters, an arbitrary length 
+	- LSTM layers with 300 memory units
+	- used dropout at 20
+	- output layer is dense layer using softmax activation
+	- we are modeling the training dataset to learn the probability of each chracter in dataset
+	- there is no testing dataset
+	- network is slow to train, so we would use checkpoints to record all network weights to a file each time an improvement is observed
+---
+
+#### 4 - Predicting Google Stock Price with RNN model
 
 Used an [LSTM neural network](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) to predict the closing price of Google stock using Yahoo stock API. This model can be used to predict the stock of any company. Just replace the company name in the code
 
